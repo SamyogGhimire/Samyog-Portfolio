@@ -1,4 +1,4 @@
-# Samyog Ghimire — Developer Portfolio
+# Samyog Ghimire — Portfolio
 
 A personal developer portfolio website built with React and Node.js.
 
