@@ -98,7 +98,7 @@ export default function Home() {
               >
                 View Projects
               </a>
-              <a className="btn-ghost" href="YOUR_RESUME_LINK_HERE" target="_blank" rel="noopener noreferrer">
+              <a className="btn-ghost" href="https://drive.google.com/file/d/1uZypSX378pgDcdUt4kfd5B-bJrF4VfAh/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 Download Resume
               </a>
             </div>
@@ -117,10 +117,7 @@ export default function Home() {
           </div>
 
           <div className="photo-box">
-            <span style={{ fontSize: '2.5rem' }}>🧑‍💻</span>
-            <p className="photo-hint">
-              Add <code>photo.jpg</code> to <code>public/</code>
-            </p>
+            <img src="./Photo.jpeg" alt="Samyog Ghimire" />
           </div>
         </div>
       </div>
