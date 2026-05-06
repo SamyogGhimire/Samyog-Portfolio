@@ -71,7 +71,7 @@ export default function Contact() {
             <a href="https://github.com/SamyogGhimire" target="_blank" rel="noopener noreferrer" className="slink">GitHub</a>
             <a href="https://linkedin.com/in/SamyogGhimire" target="_blank" rel="noopener noreferrer" className="slink">LinkedIn</a>
             <a href="https://leetcode.com/SamyogGhimire" target="_blank" rel="noopener noreferrer" className="slink">LeetCode</a>
-            <a href="mailto:you@email.com" className="slink">samyog.ghimire04@gmail.com</a>
+            <a href="mailto:samyog.ghimire04@gmail.com" className="slink">samyog.ghimire04@gmail.com</a>
           </div>
         </div>
 
