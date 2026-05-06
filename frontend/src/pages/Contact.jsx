@@ -1,5 +1,11 @@
 import React, { useState } from 'react'
-import axios from 'axios'
+import emailjs from '@emailjs/browser'
+
+
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
@@ -11,10 +17,20 @@ export default function Contact() {
     e.preventDefault()
     setStatus('loading')
     try {
-      await axios.post('https://samyog-portfolio-production.up.railway.app/api/contact', form)
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          from_name: form.name,
+          from_email: form.email,
+          message: form.message,
+        },
+        PUBLIC_KEY
+      )
       setStatus('success')
       setForm({ name: '', email: '', message: '' })
-    } catch {
+    } catch (err) {
+      console.error('EmailJS error:', err)
       setStatus('error')
     }
   }
@@ -68,8 +84,8 @@ export default function Contact() {
           <h3>Let's Connect</h3>
           <p>Have a project in mind or just want to say hi? I'm open to opportunities and collaborations.</p>
           <div className="social-list">
-            <a href="https://github.com/SamyogGhimire" target="_blank" rel="noopener noreferrer" className="slink">GitHub</a>
-            <a href="https://linkedin.com/in/SamyogGhimire" target="_blank" rel="noopener noreferrer" className="slink">LinkedIn</a>
+            <a href="https://github.com/Samyogghimire" target="_blank" rel="noopener noreferrer" className="slink">GitHub</a>
+            <a href="https://linkedin.com/in/Samyogghimire" target="_blank" rel="noopener noreferrer" className="slink">LinkedIn</a>
             <a href="https://leetcode.com/SamyogGhimire" target="_blank" rel="noopener noreferrer" className="slink">LeetCode</a>
             <a href="mailto:samyog.ghimire04@gmail.com" className="slink">samyog.ghimire04@gmail.com</a>
           </div>
