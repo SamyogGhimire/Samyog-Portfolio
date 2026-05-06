@@ -68,10 +68,10 @@ export default function Contact() {
           <h3>Let's Connect</h3>
           <p>Have a project in mind or just want to say hi? I'm open to opportunities and collaborations.</p>
           <div className="social-list">
-            <a href="https://github.com/samyogGhimire" target="_blank" rel="noopener noreferrer" className="slink">GitHub</a>
-            <a href="https://linkedin.com/in/samyogGhimire" target="_blank" rel="noopener noreferrer" className="slink">LinkedIn</a>
-            <a href="https://leetcode.com/samyogGhimire" target="_blank" rel="noopener noreferrer" className="slink">LeetCode</a>
-            <a href="mailto:you@email.com" className="slink">you@email.com</a>
+            <a href="https://github.com/SamyogGhimire" target="_blank" rel="noopener noreferrer" className="slink">GitHub</a>
+            <a href="https://linkedin.com/in/SamyogGhimire" target="_blank" rel="noopener noreferrer" className="slink">LinkedIn</a>
+            <a href="https://leetcode.com/SamyogGhimire" target="_blank" rel="noopener noreferrer" className="slink">LeetCode</a>
+            <a href="mailto:you@email.com" className="slink">samyog.ghimire04@gmail.com</a>
           </div>
         </div>
 

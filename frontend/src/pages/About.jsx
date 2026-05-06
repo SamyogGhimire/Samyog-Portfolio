@@ -1,7 +1,7 @@
 import React from 'react'
 
-const GITHUB_USERNAME = 'samyogGhimire'
-const LEETCODE_USERNAME = 'samyogGhimire'
+const GITHUB_USERNAME = 'SamyogGhimire'
+const LEETCODE_USERNAME = 'SamyogGhimire'
 
 export default function About() {
   return (
@@ -29,7 +29,7 @@ export default function About() {
       <div className="about-grid">
         <div className="about-bio">
           <p>
-            I'm <span className="hl">Samyog Ghimire</span>, a <span className="hl">Full Stack Developer</span> and DevOps learner based in India. I love building things that live on the internet.
+            I'm <span className="hl">Samyog Ghimire</span>, a <span className="hl">Full Stack Developer</span> and <span className="hl">DevOps and Cloud learner </span> based in India. I love building things that live on the internet.
           </p>
           <p>
             I work on end-to-end web applications — clean frontends, scalable backends, and I'm exploring CI/CD, containers, and cloud deployments.
@@ -41,10 +41,10 @@ export default function About() {
             {[
               { k: 'Name', v: 'Samyog Ghimire' },
               { k: 'Location', v: 'India' },
-              { k: 'Role', v: 'Full Stack Dev' },
+              { k: 'Role', v: 'Full Stack Dev/ Devops/ Cloud' },
               { k: 'Education', v: 'B.Tech CSE' },
               { k: 'Status', v: 'Open to work ⚡' },
-              { k: 'Email', v: 'you@email.com' },
+              { k: 'Email', v: 'samyog.ghimire04@gmail.com' },
             ].map(r => (
               <div className="info-row" key={r.k}>
                 <span className="info-key">{r.k}</span>

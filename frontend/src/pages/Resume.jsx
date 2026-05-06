@@ -1,6 +1,6 @@
 import React from 'react'
 
-const RESUME_LINK = 'https://drive.google.com/file/d/YOUR_FILE_ID/view'
+const RESUME_LINK = 'https://drive.google.com/file/d/1uZypSX378pgDcdUt4kfd5B-bJrF4VfAh/view?usp=sharing'
 
 export default function Resume() {
   return (
@@ -40,12 +40,6 @@ export default function Resume() {
         <a href={RESUME_LINK} target="_blank" rel="noopener noreferrer" className="resume-btn">
           View Resume →
         </a>
-        <div className="resume-hint">
-          <strong style={{ color: 'var(--text)' }}>To set up:</strong><br />
-          1. Upload your PDF to Google Drive<br />
-          2. Share → <em>Anyone with the link</em><br />
-          3. Paste the link as <code>RESUME_LINK</code> in Resume.jsx
-        </div>
       </div>
     </div>
   )

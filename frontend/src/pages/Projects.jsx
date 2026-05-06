@@ -3,7 +3,7 @@ import React from 'react'
 const projects = [
   {
     id: 1,
-    title: 'Project Alpha',
+    title: 'AWS CICD Project',
     description: 'Full-stack web app with real-time features. React, Node.js, MongoDB with authentication and REST APIs.',
     tags: ['React', 'Node.js', 'MongoDB'],
     github: 'https://github.com/samyogGhimire/project-alpha',
@@ -12,7 +12,7 @@ const projects = [
   },
   {
     id: 2,
-    title: 'DevOps Pipeline',
+    title: 'Terraform AWS Project',
     description: 'CI/CD pipeline with Docker and automated deployments on AWS EC2 with Nginx reverse proxy.',
     tags: ['Docker', 'AWS', 'Linux'],
     github: 'https://github.com/samyogGhimire/devops-pipeline',
@@ -30,7 +30,25 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Salesforce Integration',
+    title: 'Fitness Website',
+    description: 'Custom Salesforce Lightning components and Apex triggers for automating CRM workflows.',
+    tags: ['Salesforce', 'Apex', 'LWC'],
+    github: 'https://github.com/samyogGhimire/sf-integration',
+    live: '',
+    status: 'Completed',
+  },
+  {
+    id: 5,
+    title: 'AWS VPC',
+    description: 'Custom Salesforce Lightning components and Apex triggers for automating CRM workflows.',
+    tags: ['Salesforce', 'Apex', 'LWC'],
+    github: 'https://github.com/samyogGhimire/sf-integration',
+    live: '',
+    status: 'Completed',
+  },
+  {
+    id: 6,
+    title: 'Jenkins Docker Project',
     description: 'Custom Salesforce Lightning components and Apex triggers for automating CRM workflows.',
     tags: ['Salesforce', 'Apex', 'LWC'],
     github: 'https://github.com/samyogGhimire/sf-integration',
