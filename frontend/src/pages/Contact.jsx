@@ -11,7 +11,7 @@ export default function Contact() {
     e.preventDefault()
     setStatus('loading')
     try {
-      await axios.post('/api/contact', form)
+      await axios.post('https://samyog-portfolio-production.up.railway.app', form)
       setStatus('success')
       setForm({ name: '', email: '', message: '' })
     } catch {
