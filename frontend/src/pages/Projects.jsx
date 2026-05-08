@@ -32,10 +32,10 @@ const projects = [
     id: 4,
     title: 'Fitness Website',
     description: 'A full-stack gym management website built with React, Node.js, MongoDB, and Socket.IO. Features include online membership booking, Razorpay payment integration, QR code based gym entry, real-time crowd tracking, trainer hiring, and an admin scanner panel.',
-    tags: ['React', 'NodeJS', 'MongoDB','Socket.IO','Razorpay'],
+    tags: ['React', 'NodeJS', 'MongoDB','Socket.IO'],
     github: 'https://github.com/SamyogGhimire/Fitness-Webpage',
-    live: '',
-    status: 'In Progress',
+    live: 'https://fitness-webpage-nine.vercel.app/',
+    status: 'Completed',
   },
   {
     id: 5,
