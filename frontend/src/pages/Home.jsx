@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div id="home" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center' }}>
       <style>{`
-        .hero { max-width: 860px; margin: 0 auto; padding: 6rem 1.5rem 4rem; }
+        .hero { max-width: 1100px; margin: 0 auto; padding: 6rem 1.5rem 4rem; }
         .hero-greeting { font-size: 1rem; color: var(--text-muted); margin-bottom: 1rem; }
         .hero-name {
           font-size: clamp(2.4rem, 6vw, 3.8rem);
@@ -55,7 +55,7 @@ export default function Home() {
         /* Photo section */
         .hero-inner { display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; }
         .photo-box {
-          width: 200px; height: 200px; border-radius: 16px;
+          width: 280px; height: 320px; border-radius: 16px;
           background: var(--bg-card); border: 1px solid var(--border);
           display: flex; flex-direction: column; align-items: center;
           justify-content: center; gap: 8px; flex-shrink: 0;
