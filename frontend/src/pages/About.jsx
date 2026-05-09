@@ -59,8 +59,14 @@ export default function About() {
             <div className="contrib-head">GitHub Contributions</div>
             <div className="contrib-body">
               <img
-                src={`https://ghchart.rshah.org/7c3aed/${GITHUB_USERNAME}`}
-                alt="GitHub contributions"
+                src={`https://ghchart.rshah.org/1dc675/${GITHUB_USERNAME}`}
+                alt="GitHub stats"
+                onError={e => { e.target.style.display = 'none' }}
+              />
+              <img
+                src={`https://github-readme-streak-stats.herokuapp.com?user=${GITHUB_USERNAME}&theme=tokyonight&hide_border=true&background=00000000&ring=7c3aed&fire=a78bfa&currStreakLabel=7c3aed`}
+                alt="GitHub streak"
+                style={{ marginTop: '0.75rem' }}
                 onError={e => { e.target.style.display = 'none' }}
               />
               <span className="contrib-link">
