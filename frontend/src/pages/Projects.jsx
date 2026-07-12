@@ -1,8 +1,17 @@
 import React from 'react'
 
 const projects = [
-  {
+    {
     id: 1,
+    title: 'Fitness Website',
+    description: 'A full-stack gym management website built with React, Node.js, MongoDB, and Socket.IO. Features include online membership booking, QR code based gym entry, real-time crowd tracking, trainer hiring, and an admin scanner panel.',
+    tags: ['React', 'NodeJS', 'MongoDB','Socket.IO'],
+    github: 'https://github.com/SamyogGhimire/Fitness-Webpage',
+    live: 'https://fitness-webpage-nine.vercel.app/',
+    status: 'Completed',
+  },
+  {
+    id: 2,
     title: 'AWS CICD Project',
     description: 'Configuring and running AWS CodeBuild for a simple python project, including defining build specifications and integrating with other AWS services.',
     tags: ['AWS', 'AWS CodeBuild'],
@@ -11,7 +20,7 @@ const projects = [
     status: 'Completed',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Terraform AWS Project',
     description: 'Terraform project that provisions an AWS VPC with public subnets, EC2 web servers behind an Application Load Balancer, and an S3 bucket for storage.',
     tags: ['Docker', 'AWS', 'Linux'],
@@ -20,21 +29,12 @@ const projects = [
     status: 'Completed',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Portfolio Website',
     description: 'This portfolio — React + Vite frontend with an Express.js backend.',
     tags: ['React', 'Node.js', 'Vite'],
     github: 'https://github.com/SamyogGhimire/Samyog-Portfolio',
     live: 'https://samyogghimire.com.np',
-    status: 'Completed',
-  },
-  {
-    id: 4,
-    title: 'Fitness Website',
-    description: 'A full-stack gym management website built with React, Node.js, MongoDB, and Socket.IO. Features include online membership booking, Razorpay payment integration, QR code based gym entry, real-time crowd tracking, trainer hiring, and an admin scanner panel.',
-    tags: ['React', 'NodeJS', 'MongoDB','Socket.IO'],
-    github: 'https://github.com/SamyogGhimire/Fitness-Webpage',
-    live: 'https://fitness-webpage-nine.vercel.app/',
     status: 'Completed',
   },
   {
