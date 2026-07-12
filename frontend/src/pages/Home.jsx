@@ -117,7 +117,7 @@ export default function Home() {
           </div>
 
           <div className="photo-box">
-            <img src="/public/Photo.png" alt="Samyog Ghimire" />
+            <img src="/Photo.png" alt="Samyog Ghimire" />
           </div>
         </div>
       </div>
