@@ -98,7 +98,7 @@ export default function Home() {
               >
                 View Projects
               </a>
-              <a className="btn-ghost" href="https://drive.google.com/file/d/1uZypSX378pgDcdUt4kfd5B-bJrF4VfAh/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <a className="btn-ghost" href="https://drive.google.com/file/d/1gAGM1mijAtSnFA2D-kVIjWg_Gyf64TZM/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 Download Resume
               </a>
             </div>
