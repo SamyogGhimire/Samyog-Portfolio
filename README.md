@@ -26,7 +26,6 @@ Personal portfolio of Samyog Ghimire, DevOps & Cloud Engineer and Full-Stack Dev
 - Skills cards that scroll sideways as you scroll down (swipeable on mobile)
 - Dark / light mode, remembered between visits
 - Live GitHub contribution heatmap, streak stats and LeetCode card
-- FAQ accordion
 - Contact form powered by EmailJS
 - Football rolling loader on startup
 - Accessible: skip link, keyboard navigation, focus styles and reduced-motion support
@@ -41,7 +40,6 @@ Personal portfolio of Samyog Ghimire, DevOps & Cloud Engineer and Full-Stack Dev
 - **Why Work With Me:** three core strengths
 - **About:** bio, quick facts, GitHub & LeetCode activity
 - **Toolbox:** skills grouped into Cloud & IaC, Containers, CI/CD, Observability, Backend, Frontend, Data and Languages
-- **FAQ:** common questions from recruiters and clients
 - **Contact:** email, socials, resume and contact form
 
 ---
@@ -53,11 +51,11 @@ samyog-portfolio/
 ├── frontend/
 │   ├── public/            # Photo.png, favicon
 │   └── src/
-│       ├── data.js        # All content: projects, skills, FAQ, links
+│       ├── data.js        # All content: projects, skills, links
 │       ├── index.css      # Design tokens (colours, fonts) and all styles
 │       ├── App.jsx        # Theme, loader and page layout
 │       ├── components/    # Navbar, Loader, Reveal (scroll animation)
-│       └── sections/      # Hero, Work, Why, About, Skills, Faq, Contact
+│       └── sections/      # Hero, Work, Why, About, Skills, Contact
 └── backend/
     └── src/index.js       # Express API: /api/contact, /api/health
 ```
@@ -95,7 +93,7 @@ EMAIL_TO=
 
 ## Editing Content
 
-Almost everything you'd want to change lives in **`frontend/src/data.js`**: projects, skills, FAQ answers, social links, email and the resume link. The About bio is in `frontend/src/sections/About.jsx`, and the colours are the tokens at the top of `frontend/src/index.css`.
+Almost everything you'd want to change lives in **`frontend/src/data.js`**: projects, skills, social links, email and the resume link. The About bio is in `frontend/src/sections/About.jsx`, and the colours are the tokens at the top of `frontend/src/index.css`.
 
 To change the hero photo, replace `frontend/public/Photo.png`. If the new photo has a transparent background, add the `cutout` class to the image in `sections/Hero.jsx`.
 

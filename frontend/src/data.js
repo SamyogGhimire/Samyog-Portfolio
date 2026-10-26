@@ -14,7 +14,6 @@ export const navLinks = [
   { label: 'Work', id: 'work' },
   { label: 'About', id: 'about' },
   { label: 'Skills', id: 'skills' },
-  { label: 'FAQ', id: 'faq' },
 ]
 
 const gh = name => `https://github.com/${GITHUB_USERNAME}/${name}`
@@ -211,32 +210,5 @@ export const skillGroups = [
       { name: 'TypeScript', icon: icon('typescript/typescript-original.svg') },
       { name: 'Go', icon: icon('go/go-original-wordmark.svg') },
     ],
-  },
-]
-
-export const faqs = [
-  {
-    q: 'What kind of roles are you looking for?',
-    a: 'DevOps, Cloud and Platform Engineering roles, and full-stack positions where I can own a feature from the UI down to the infrastructure it runs on.',
-  },
-  {
-    q: 'Are you open to remote work or freelance projects?',
-    a: 'Yes. I’m open to remote, hybrid and on-site opportunities, as well as freelance work. Send me the details through the form below.',
-  },
-  {
-    q: 'What does your usual stack look like?',
-    a: 'React or Next.js on the front, Node.js, FastAPI or Django behind it, PostgreSQL or MongoDB for data, all shipped with Docker, Terraform and a CI/CD pipeline to AWS or Kubernetes, and watched with Prometheus and Grafana.',
-  },
-  {
-    q: 'Can I see the code for your projects?',
-    a: 'Every project links to its GitHub repository. If a repository isn’t public yet, get in touch and I’ll walk you through it.',
-  },
-  {
-    q: 'How do you approach a new project?',
-    a: 'I start with the failure modes: what breaks, how we’d notice, and how it recovers. Then I build the smallest version that can be deployed, automate the pipeline early and iterate from real feedback.',
-  },
-  {
-    q: 'How quickly do you reply?',
-    a: 'Usually within a day or two. Email is the fastest way to reach me.',
   },
 ]

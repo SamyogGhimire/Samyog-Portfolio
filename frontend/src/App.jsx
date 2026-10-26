@@ -7,7 +7,6 @@ import Work from './sections/Work'
 import Why from './sections/Why'
 import About from './sections/About'
 import Skills from './sections/Skills'
-import Faq from './sections/Faq'
 import Contact from './sections/Contact'
 
 const initialTheme = () => {
@@ -44,7 +43,6 @@ export default function App() {
         <Why />
         <About theme={theme} />
         <Skills />
-        <Faq />
       </main>
       <Contact />
     </MotionConfig>
