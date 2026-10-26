@@ -1,6 +1,6 @@
 # Samyog Ghimire — Portfolio
 
-A personal developer portfolio website built with React and Node.js.
+Personal portfolio of Samyog Ghimire, DevOps & Cloud Engineer and Full-Stack Developer. A single-page site with a bold purple design, scroll-driven animations and live GitHub and LeetCode activity.
 
 🌐 **Live:** [samyogghimire.com.np](https://samyogghimire.com.np)
 
@@ -8,11 +8,11 @@ A personal developer portfolio website built with React and Node.js.
 
 ## Tech Stack
 
-**Frontend:** React 18, Vite, Axios, EmailJS, CSS Variables
+**Frontend:** React 18, Vite, Framer Motion, Lucide icons, EmailJS, plain CSS with design tokens
 
-**Backend:** Node.js, Express.js
+**Backend:** Node.js, Express.js, Nodemailer (optional contact API)
 
-**Fonts & Icons:** Inter (Google Fonts), Devicons CDN
+**Fonts & Icons:** Space Grotesk + Inter (Google Fonts), Devicons CDN
 
 **Deployment:** Vercel (frontend) · Railway (backend)
 
@@ -20,28 +20,82 @@ A personal developer portfolio website built with React and Node.js.
 
 ## Features
 
-- Single page scroll with active section highlighting
-- Dark / Light mode toggle
-- Typing animation on hero section
-- Football rolling loader on startup
-- GitHub contribution heatmap (live)
-- LeetCode stats card (live)
+- Full-screen purple gradient hero with a blended portrait and an animated name reveal
+- Sticky project timeline that highlights the project you're reading
+- Project cards with a "How it works" pipeline diagram for each project
+- Skills cards that scroll sideways as you scroll down (swipeable on mobile)
+- Dark / light mode, remembered between visits
+- Live GitHub contribution heatmap, streak stats and LeetCode card
 - Contact form powered by EmailJS
-- Skills grid with 23 tech icons
-- Project cards with GitHub and live demo links
-- Resume section linked to Google Drive
-- Fully responsive on all screen sizes
+- Football rolling loader on startup
+- Accessible: skip link, keyboard navigation, focus styles and reduced-motion support
+- Fully responsive, from phones to wide screens
 
 ---
 
 ## Sections
 
-- **Home** — Introduction, stats, photo
-- **About** — Bio, info, GitHub & LeetCode activity
-- **Skills** — Tech stack icon grid
-- **Projects** — Project cards with GitHub links
-- **Contact** — EmailJS powered contact form
-- **Resume** — Google Drive resume link
+- **Hero:** name, roles, links to work and resume
+- **Selected Work:** 8 projects, including Self-Healing Kubernetes, AgentWarden, FraudLens, CivicTrack, Terraform Security Lab, Real-Time Fraud Pipeline, GitOps CI/CD Pipeline and FitnessHub
+- **Why Work With Me:** three core strengths
+- **About:** bio, quick facts, GitHub & LeetCode activity
+- **Toolbox:** skills grouped into Cloud & IaC, Containers, CI/CD, Observability, Backend, Frontend, Data and Languages
+- **Contact:** email, socials, resume and contact form
+
+---
+
+## Project Structure
+
+```
+samyog-portfolio/
+├── frontend/
+│   ├── public/            # Photo.png, favicon
+│   └── src/
+│       ├── data.js        # All content: projects, skills, links
+│       ├── index.css      # Design tokens (colours, fonts) and all styles
+│       ├── App.jsx        # Theme, loader and page layout
+│       ├── components/    # Navbar, Loader, Reveal (scroll animation)
+│       └── sections/      # Hero, Work, Why, About, Skills, Contact
+└── backend/
+    └── src/index.js       # Express API: /api/contact, /api/health
+```
+
+---
+
+## Getting Started
+
+```bash
+npm run install:all   # install root, frontend and backend dependencies
+npm run dev           # start frontend and backend together
+```
+
+The frontend runs at `http://localhost:5173` by default.
+
+### Environment variables
+
+`frontend/.env`
+
+```
+VITE_EMAILJS_SERVICE_ID=
+VITE_EMAILJS_TEMPLATE_ID=
+VITE_EMAILJS_PUBLIC_KEY=
+```
+
+`backend/.env` (only needed for the optional `/api/contact` endpoint)
+
+```
+EMAIL_USER=
+EMAIL_PASS=
+EMAIL_TO=
+```
+
+---
+
+## Editing Content
+
+Almost everything you'd want to change lives in **`frontend/src/data.js`**: projects, skills, social links, email and the resume link. The About bio is in `frontend/src/sections/About.jsx`, and the colours are the tokens at the top of `frontend/src/index.css`.
+
+To change the hero photo, replace `frontend/public/Photo.png`. If the new photo has a transparent background, add the `cutout` class to the image in `sections/Hero.jsx`.
 
 ---
 
@@ -52,6 +106,3 @@ A personal developer portfolio website built with React and Node.js.
 | Frontend | [Vercel](https://vercel.com) |
 | Backend | [Railway](https://railway.app) |
 | Email | [EmailJS](https://emailjs.com) |
-
----
-
